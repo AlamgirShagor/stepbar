@@ -45,7 +45,7 @@ const StepThree = ({setStep, button, input, handleSubmit, userData, setuserData}
                     rows="5">
                 </textarea>
                 <div style={{display : "inline"}}>
-                    <button type="button" style={button} onClick={()=>setStep(2) }  >Previous</button>
+                        <button type="button" style={button} onClick={()=>setStep(2) }  >Previous</button>
                     <div style={{float: "right"}}>
                         <button type="button" onClick={handleSubmit} style={button} >Submit</button>
                     </div>

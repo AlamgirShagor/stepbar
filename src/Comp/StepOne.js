@@ -37,7 +37,7 @@ const handleBlur = (e) => {
                 <input type="hidden" role="uploadcare-uploader" name="my_file" />
                 </div>
                 <div style={{float: "right"}}>
-                    <input  onClick={()=>setStep(2)} style={button} value="Next" type="submit"/>
+                    <button type="button" onClick={()=>setStep(2) } style={button} >Next</button>
                 </div>
             </form>
         </div>

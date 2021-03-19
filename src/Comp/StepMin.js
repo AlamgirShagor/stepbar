@@ -1,4 +1,5 @@
 import React, { useContext, useState } from 'react';
+import StepFour from './StepFour';
 import StepOne from './StepOne';
 import StepThree from './StepThree';
 import StepTow from './StepTow';
@@ -28,10 +29,10 @@ const StepMin = () => {
       }
     const handleSubmit = (e) => {
         console.log(userData);
-        setStep(1)
+        setStep(4)
         setuserData('')
-        alert("Success Thanks for submitting your form")
-        e.preventDefault();
+        // alert("Success Thanks for submitting your form")
+        
     }
     function showStep(step){
         switch(step){
@@ -41,6 +42,8 @@ const StepMin = () => {
                 return <StepTow setStep={setStep} input={input} button={button} handleSubmit={handleSubmit} userData={userData} setuserData={setuserData}/>
             case 3:
                 return <StepThree setStep={setStep} input={input} button={button} handleSubmit={handleSubmit} userData={userData} setuserData={setuserData}/>
+            case 4 :
+                return <StepFour setStep={setStep} button={button}/>
             
         }
     }

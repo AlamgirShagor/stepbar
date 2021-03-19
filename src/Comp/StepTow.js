@@ -31,8 +31,8 @@ const StepTow = ({setStep, button, input, handleSubmit, userData, setuserData}) 
                     <option value="Gloss">Gloss</option>
                 </select>
                 
-                <div style={{display : "inline"}}>
-                    <button type="button" style={button} onClick={()=>setStep(1) }  >Previous</button>
+                    <div style={{display : "inline"}}>
+                        <button type="button" style={button} onClick={()=>setStep(1) }  >Previous</button>
                     <div style={{float: "right"}}>
                         <button type="button" onClick={()=>setStep(3) } style={button} >Next</button>
                     </div>
